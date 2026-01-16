@@ -1,0 +1,135 @@
+.recipeContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.backLink:hover {
+    color: var(--foreground);
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+    background: linear-gradient(to right, #fff, #ccc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.meta {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.imageWrapper {
+    margin-bottom: 1.5rem;
+}
+
+.image {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card {
+    padding: 2rem;
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+}
+
+.card h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.ingredientList {
+    list-style: none;
+}
+
+.ingredientItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ingredientItem:last-child {
+    border-bottom: none;
+}
+
+.measure {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.instructions p {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+    color: #ddd;
+    font-size: 1.1rem;
+}
+
+.sourceLink,
+.youtubeLink {
+    display: block;
+    margin-top: 1rem;
+    color: #888;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.sourceLink:hover,
+.youtubeLink:hover {
+    color: var(--accent);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

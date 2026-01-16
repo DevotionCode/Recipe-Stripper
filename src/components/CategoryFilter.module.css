@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto;
+    overflow-x: auto;
+    padding: 0.5rem;
+}
+
+.scroll {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.chip {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--foreground);
+    padding: 0.6rem 1.2rem;
+    border-radius: 99px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.chip:hover {
+    background: rgba(255, 255, 255, 0.15);
+    background-color: var(--accent);
+    color: white;
+}
+
+.active {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .scroll {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+}
